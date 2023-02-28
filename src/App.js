@@ -13,7 +13,7 @@ function App() {
                 <Layout>
                     <div className='routes'>
                         <Routes>
-                            <Route index path='/' element={<Homepage/>}/>
+                            <Route exact index path='/' element={<Homepage/>}/>
                             <Route path='/exchanges' element={<Exchanges/>}/>
                             <Route path='/cryptocurrencies' element={<Cryptocurrencies/>}/>
                             <Route path='/crypto/:coinId' element={<CryptoDetails/>}/>
